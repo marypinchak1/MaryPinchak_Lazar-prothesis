@@ -1,0 +1,78 @@
+.footer {
+  background-color: #053412;
+  padding-top: 40px;
+  &__logo {
+    text-decoration: none;
+    img {
+      width: 160px;
+      height: 71px;
+    }
+    p {
+      font-size: 24px;
+      line-height: 1.2;
+      color: #45965b;
+      margin-left: 12px;
+    }
+  }
+  &__nav {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-right: 5px;
+      padding: 4px;
+      list-style: none;
+      :hover {
+        border-radius: 10px;
+        background-color: #c0eccc;
+        color: #053412;
+      }
+      a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.2;
+        color: #c0eccc;
+        padding: 4px;
+      }
+      img {
+        width: 14px;
+        height: 6px;
+        margin: 2px;
+      }
+    }
+  }
+  &__contacts {
+    margin-left: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.2;
+
+    .grey {
+      font-size: 16px;
+      color: #c1c1c1;
+    }
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+  }
+  &__email {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #c0eccc;
+    :hover {
+      color: #ffffff;
+    }
+  }
+  &-company {
+    padding: 18px 0;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #c2c2c2;
+    background: #01270c;
+  }
+}

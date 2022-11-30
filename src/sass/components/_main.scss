@@ -1,0 +1,302 @@
+.breadcrumb {
+    height: 90px;
+    align-items: center;
+    margin-bottom: 0;
+    @media screen and(max-width:992px) {
+      margin-top: 100px;
+    }
+    li {
+      font-size: 20px;
+      line-height: 1.2;
+      a {
+        text-decoration: none;
+        color: #053412;
+        padding: 2px;
+        &:hover {
+          color: #21863c;
+        }
+      }
+    }
+  }
+  .prosthesis {
+    &__title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.2;
+      text-align: center;
+      text-transform: uppercase;
+      color: #64a476;
+      margin-bottom: 36px;
+      @media screen and(max-width:768px) {
+        margin-top: 120px;
+      }
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.1;
+      margin-bottom: 34px;
+      font-feature-settings: "ss01" on;
+    }
+  
+    &__applications {
+      height: 178px;
+      background: #dedede;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      p {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.2;
+        color: #933535;
+      }
+      span {
+        font-size: 32px;
+        line-height: 1.2;
+        @media screen and(max-width: 500px) {
+          font-size: 24px;
+        }
+      }
+    }
+    &__icon {
+      background: #ededed;
+      border-radius: 10px;
+      align-items: center;
+      min-height: 120px;
+  
+      img {
+        max-width: 100%;
+        max-height: auto;
+      }
+      &-description {
+        span {
+          font-size: 20px;
+          line-height: 1.2;
+          font-feature-settings: "ss01" on;
+        }
+        p {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 1.2;
+          font-feature-settings: "ss01" on;
+          margin: 0;
+        }
+      }
+    }
+    &__list {
+      font-size: 20px;
+      line-height: 1.2;
+      font-feature-settings: "ss01" on;
+      margin-bottom: 30px;
+      a {
+        text-decoration: none;
+        color: #000;
+        padding: 5px 10px;
+        border: 1px solid #767676;
+        border-radius: 10px;
+        margin-left: 10px;
+      }
+    }
+    &__got {
+      height: 178px;
+      background: #e3f4e8;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      p {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.2;
+        color: #003611;
+      }
+      span {
+        font-size: 32px;
+        line-height: 1.2;
+        @media screen and(max-width: 500px) {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .registration {
+    background-color: #c6dbcc;
+    &__form {
+      .registration__title {
+        margin: 70px 0 50px 0;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.2;
+        text-transform: uppercase;
+      }
+      .registration__description {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 1.2;
+        font-feature-settings: "ss01" on;
+        margin-bottom: 12px;
+        span {
+          color: #a3a3a3;
+        }
+      }
+      .registration__items {
+        margin-bottom: 60px;
+        .registration__item {
+          height: 172px;
+          position: relative;
+          margin-bottom: 30px;
+          &-img {
+            height: 90px;
+          }
+          img {
+            max-width: auto;
+            max-height: 68px;
+            margin-bottom: 34px;
+          }
+        }
+      }
+      &-data {
+        &-input {
+          padding: 15px 24px;
+          background: #f5f5f5;
+          border: 2px solid #64a476;
+          &::placeholder {
+            font-size: 20px;
+            line-height: 1.2;
+            color: #a3a3a3;
+            @media screen and(max-width:450px) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      textarea {
+        background: #f5f5f5;
+        border: 2px solid #64a476;
+        padding: 12px;
+        margin-bottom: 30px;
+      }
+    }
+    &__button {
+      padding: 24px;
+      background: #4c9f62;
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1.2;
+      margin-bottom: 60px;
+    }
+  }
+  .checkbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    font-size: 20px;
+  
+    &__input {
+      -webkit-appearance: none;
+      appearance: none;
+      position: absolute;
+    }
+  
+    &__label {
+      cursor: pointer;
+    }
+    &__label::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 40px;
+      height: 40px;
+      background: #ffffff;
+      border: 2px solid #64a476;
+      z-index: 1;
+    }
+    &__label::after {
+      content: "";
+      display: block;
+      width: 23px;
+      height: 14px;
+      background: url(../img/check.svg) no-repeat;
+      background-size: 23px 14px;
+      opacity: 0;
+      position: absolute;
+      left: 8px;
+      bottom: 14px;
+      z-index: 2;
+      transition: opacity 0.1s linear;
+    }
+    &__input:checked + .checkbox__label:before {
+      background-color: #16682c;
+    }
+    &__input:checked + .checkbox__label:after {
+      opacity: 1;
+    }
+  }
+  .registration__radio {
+    position: relative;
+  
+    .radio__input {
+      -webkit-appearance: none;
+      appearance: none;
+      position: absolute;
+    }
+    .radio__label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 20px;
+      line-height: 1.1;
+      cursor: pointer;
+      @media screen and(max-width:450px) {
+        font-size: 18px;
+      }
+    }
+    .radio__label::before {
+      content: "";
+      display: block;
+      width: 45px;
+      height: 45px;
+      background: linear-gradient(0deg, #ffffff, #ffffff), #ffffff;
+      border: 2px solid #64a476;
+      border-radius: 50%;
+    }
+    .radio__label::after {
+      content: "";
+      display: block;
+      width: 27px;
+      height: 27px;
+      background-color: #16682c;
+      background-size: 27px 27px;
+      border-radius: 50%;
+  
+      opacity: 0;
+      position: absolute;
+      left: 9px;
+      bottom: 9px;
+      z-index: 2;
+      transition: opacity 0.1s linear;
+    }
+    .radio__input:checked + .radio__label:before {
+      background-color: #16682c;
+    }
+    .radio__input:checked + .radio__label:after {
+      opacity: 1;
+    }
+    .registration__form-data-input{
+      display: none;
+    }
+    .registration__form-data-input.active{
+      display: block;
+    }
+  }
+  .thanks {
+    p {
+      font-size: 20px;
+      line-height: 1.1;
+  
+      font-feature-settings: "ss01" on;
+    }
+  }
+  

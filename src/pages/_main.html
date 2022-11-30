@@ -1,0 +1,449 @@
+<section class="d-none d-md-block ">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Головна</a></li>
+            <li class="breadcrumb-item"><a href="#">Проєкти</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Протезування
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="prosthesis  mt-4 mt-md-0">
+          <div class="col-12 prosthesis__title d-flex justify-content-center">
+            Протезування
+          </div>
+          <p class="text-center">
+            БФ «ЛАЗАР» розпочинає проєкт допомоги українцям, які втратили
+            кінцівки рук або ніг від військових дій на території України.
+          </p>
+          <div
+            class="col-12 prosthesis__applications d-flex align-items-center"
+          >
+            <p class="col-5 d-flex justify-content-center m-0">325</p>
+            <span class="col-7 d-flex justify-content-center"
+              >постраждалих подали заявки на протезування</span
+            >
+          </div>
+          <div class="col-12 prosthesis__icon d-flex flex-wrap mb-3">
+            <div class="col-6 col-lg-3 pe-3 mb-3">
+              <div class="prosthesis__icon d-flex justify-content-evenly p-3">
+                <img class="me-3" src="img/leg-grey.svg" alt="leg" />
+                <div
+                  class="prosthesis__icon-description d-flex flex-column justify-content-between"
+                >
+                  <span>Нижні кінцівки</span>
+                  <p>25</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pe-lg-3 mb-3">
+              <div class="prosthesis__icon d-flex justify-content-evenly p-3">
+                <img class="me-3" src="img/arm-grey.svg" alt="arm" />
+                <div
+                  class="prosthesis__icon-description d-flex flex-column justify-content-between"
+                >
+                  <span>Верхні кінцівки</span>
+                  <p>45</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pe-3 mb-3">
+              <div class="prosthesis__icon d-flex justify-content-evenly p-3">
+                <img class="me-3" src="img/face-grey.svg" alt="face" />
+                <div
+                  class="prosthesis__icon-description d-flex flex-column justify-content-between"
+                >
+                  <span>Обличчя</span>
+                  <p>50</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="prosthesis__icon d-flex justify-content-evenly p-3">
+                <img class="me-3" src="img/other-grey.svg" alt="leg" />
+                <div
+                  class="prosthesis__icon-description d-sm-flex flex-column justify-content-between"
+                >
+                  <span>Інше</span>
+                  <p>100</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 prosthesis__list d-flex justify-content-center align-items-center"
+          >
+            <p class="m-0">Реєстр заявок на протезування</p>
+            <a href="#">Завантажити</a>
+          </div>
+          <div
+            class="col-12 prosthesis__got d-flex justify-content-center align-items-center"
+          >
+            <p class="col-5 d-flex justify-content-center m-0">59</p>
+            <span class="col-7 d-flex justify-content-center"
+              >постраждалих отримали допомогу</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="registration">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <form
+          class="registration__form"
+          onsubmit="event.preventDefault()"
+          action=""
+          post="/create_new_post"
+        >
+          <legend
+            class="col-12 registration__title d-flex justify-content-center"
+          >
+            Зареєструватись на протезування
+          </legend>
+          <div class="col-12 registration__description">
+            Оберіть рівень протезування<span>*</span>
+          </div>
+          <div class="col-12 registration__items d-flex flex-wrap">
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="registration__item d-flex flex-column">
+                <div class="registration__item-img">
+                  <img src="img/fingers.svg" alt="fingers" />
+                </div>
+
+                <div class="checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="checkbox"
+                    id="checkbox-fingers"
+                    value="Пальці"
+                  /><label class="checkbox__label" for="checkbox-fingers"
+                    >Пальці</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="registration__item d-flex flex-column">
+                <div class="registration__item-img">
+                  <img src="img/Hand.svg" alt="hand" />
+                </div>
+
+                <div class="checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="checkbox"
+                    id="checkbox-hand"
+                    value="Кисть"
+                  /><label class="checkbox__label" for="checkbox-hand"
+                    >Кисть</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="registration__item d-flex flex-column">
+                <div class="registration__item-img">
+                  <img src="img/forearm.svg" alt="forearm" />
+                </div>
+
+                <div class="checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="checkbox"
+                    id="checkbox-forearm"
+                    value="Передпліччя"
+                  /><label class="checkbox__label" for="checkbox-forearm"
+                    >Передпліччя</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="registration__item d-flex flex-column">
+                <div class="registration__item-img">
+                  <img src="img/arm.svg" alt="arm" />
+                </div>
+
+                <div class="checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="checkbox"
+                    id="checkbox-arm"
+                    value="Плече"
+                  /><label class="checkbox__label" for="checkbox-arm"
+                    >Плече</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="registration__item d-flex flex-column">
+                <div class="registration__item-img">
+                  <img src="img/foot.svg" alt="foot" />
+                </div>
+
+                <div class="checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="checkbox"
+                    id="checkbox-foot"
+                    value="Стопа"
+                  /><label class="checkbox__label" for="checkbox-foot"
+                    >Стопа</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="registration__item d-flex flex-column">
+                <div class="registration__item-img">
+                  <img src="img/lover-leg.svg" alt="lover-leg" />
+                </div>
+
+                <div class="checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="checkbox"
+                    id="checkbox-lover-leg"
+                    value="Гомілка"
+                  /><label class="checkbox__label" for="checkbox-lover-leg"
+                    >Гомілка</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="registration__item d-flex flex-column">
+                <div class="registration__item-img">
+                  <img src="img/leg.svg" alt="leg" />
+                </div>
+
+                <div class="checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="checkbox"
+                    id="checkbox-leg"
+                    value="Стегно"
+                  /><label class="checkbox__label" for="checkbox-leg"
+                    >Стегно</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="registration__item d-flex flex-column">
+                <div class="registration__item-img pt-3">
+                  <img src="img/face.svg" alt="face" />
+                </div>
+
+                <div class="checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="checkbox"
+                    id="checkbox-face"
+                    value="Обличчя"
+                  /><label class="checkbox__label" for="checkbox-face"
+                    >Обличчя</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="registration__item d-flex flex-column">
+                <div class="registration__item-img">
+                  <img src="img/body.svg" alt="body" />
+                </div>
+
+                <div class="checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="checkbox"
+                    id="checkbox-body"
+                    value="Шкіра"
+                  /><label class="checkbox__label" for="checkbox-body"
+                    >Шкіра</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="registration__item d-flex flex-column">
+                <div class="registration__item-img">
+                  <img class="mt-3" src="img/other.svg" alt="other" />
+                </div>
+
+                <div class="checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="checkbox"
+                    id="checkbox-other"
+                    value="Інше"
+                  /><label class="checkbox__label" for="checkbox-other"
+                    >Інше</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="registration__form-data mb-3">
+            <input
+              class="col-12 mb-4 registration__form-data-input"
+              placeholder="Прізвище, ім’я, по-батькові*"
+              type="text"
+            />
+            <input
+              class="col-12 mb-4 registration__form-data-input"
+              placeholder="E-mail*"
+              type="email"
+            />
+            <input
+              class="col-12 mb-3 registration__form-data-input"
+              placeholder="Телефон*"
+              type="text"
+            />
+          </div>
+          <div class="mb-3">
+            <div class="col-12 registration__description">Ви<span>*</span></div>
+            <div class="d-md-flex">
+              <div class="col-md-4 mb-3 registration__radio">
+                <input
+                  class="radio__input"
+                  name="applicant"
+                  type="radio"
+                  id="radio_1"
+                  value="victim"
+                />
+                <label class="radio__label" for="radio_1">потерпілий/ла</label>
+              </div>
+              <div class="col-md-8 mb-3 registration__radio">
+                <input
+                  class="radio__input relatives"
+                  name="applicant"
+                  type="radio"
+                  id="radio_2"
+                  value="relatives"
+                />
+                <label class="radio__label" for="radio_2"
+                  >батьки, опікуни чи рідні особи</label
+                >
+              </div>
+            </div>
+            <input
+              class="col-12 mb-3 flex-wrap registration__form-data-input"
+              placeholder="Прізвище, ім’я, по-батькові потерпілого*"
+              type="text"
+              
+            />
+          </div>
+          <div class="mb-3">
+            <div class="col-12 registration__description">
+              Стать<span>*</span>
+            </div>
+            <div class="d-md-flex">
+              <div class="col-md-4 mb-3 registration__radio">
+                <input
+                  class="radio__input"
+                  name="sex"
+                  type="radio"
+                  id="radio_3"
+                  value="woman"
+                />
+                <label class="radio__label" for="radio_3">жіноча</label>
+              </div>
+              <div class="col-8 mb-3 registration__radio">
+                <input
+                  class="radio__input"
+                  name="sex"
+                  type="radio"
+                  id="radio_4"
+                  value="man"
+                />
+                <label class="radio__label" for="radio_4">чоловіча</label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="col-12 registration__description">
+              Вік<span>*</span>
+            </div>
+            <div class="d-md-flex mb-3">
+              <div class="col-md-4 mb-3 registration__radio">
+                <input
+                  class="radio__input"
+                  name="age"
+                  type="radio"
+                  id="radio_5"
+                  value="child"
+                />
+                <label class="radio__label" for="radio_5">2-11 років</label>
+              </div>
+              <div class="col-md-4 mb-3 registration__radio">
+                <input
+                  class="radio__input"
+                  name="age"
+                  type="radio"
+                  id="radio_6"
+                  value="junior"
+                />
+                <label class="radio__label" for="radio_6">12-17 років</label>
+              </div>
+              <div class="col-md-4 mb-3 registration__radio">
+                <input
+                  class="radio__input"
+                  name="age"
+                  type="radio"
+                  id="radio_7"
+                  value="adult"
+                />
+                <label class="radio__label" for="radio_7">18 і більше</label>
+              </div>
+            </div>
+          </div>
+          <textarea
+            class="col-12"
+            name="textarea"
+            cols="40"
+            rows="10"
+            placeholder="Короткий опис, діагноз*"
+            required
+          ></textarea>
+          <input
+            class="col-12 registration__button"
+            type="submit"
+            value="Зареєструватись"
+          />
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 thanks text-center my-5">
+        <p class="mb-3">Дякуємо за реєстрацію!</p>
+        <p class="mb-3">
+          Ми зв’яжемось з Вами протягом 2-х днів Просимо підготувати документи,
+          які підтверджують особу потерпілого, медичні заключення (за
+          можливості).
+        </p>
+        <p>Слава Україні!</p>
+      </div>
+    </div>
+  </div>
+</section>
